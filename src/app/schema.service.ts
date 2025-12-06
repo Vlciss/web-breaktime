@@ -21,7 +21,7 @@ export class SchemaService {
       "@type": "CafeOrCoffeeShop",
       "name": "BreakTime",
       "image": "https://vlciss.github.io/breaktime-web/assets/gallery/main.jpg",
-      "description": "Moderná kaviareň v centre Banskej Bystrice. Ponúkame kvalitnú kávu, čerstvé jedlá a príjemnú atmosféru.",
+      "description": "Moderná kaviareň v Banskej Bystrici. Ponúkame kvalitnú kávu, čerstvé jedlá a príjemnú atmosféru.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Trieda SNP 75",
