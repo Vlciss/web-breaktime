@@ -1,59 +1,109 @@
-# BreakTimeWeb
+# BreakTime - Café Website
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.2.
+Modern website for BreakTime café in Banská Bystrica. Built with Angular 18+.
 
-## Development server
+## 📋 About
 
-To start a local development server, run:
+BreakTime is a café in the center of Banská Bystrica offering quality coffee, fresh food and a pleasant atmosphere. This website serves as an online business card with information about the menu, gallery and contact form.
 
-```bash
-ng serve
-```
+## 🎨 Features
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Home page** - hero section with background image, café story and values
+- **Menu** - split into drinks and food menu (without prices)
+- **Gallery** - 9 photo slots with elegant display
+- **Catering** - catering services with gallery and contact
+- **Contact form** - functional form connected to EmailJS
+- **Responsive design** - optimized for mobile, tablet and desktop
 
-## Code scaffolding
+## 🎨 Design
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Color Palette
+- Primary colors: `#6B4423`, `#8B5A2B` (dark brown gradients)
+- Background: `#fef9f3` (cream)
+- Accents: `#d4a574`, `#e8c5a0`, `#f4e4d7`
+- Text: `#5d4037`
 
-```bash
-ng generate component component-name
-```
+### Style
+- Casual Slovak language
+- Warm brown-beige tones reminiscent of coffee and food
+- Subtle shadows and hover effects
+- Minimalist approach
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🚀 Getting Started
 
-```bash
-ng generate --help
-```
+### Prerequisites
+- Node.js v25.2.1 or higher
+- npm or yarn
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+### Installation
 
 ```bash
-ng test
+# Clone repository
+git clone <repository-url>
+cd break-time-web
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
 ```
 
-## Running end-to-end tests
+Application will be available at `http://localhost:4200/`
 
-For end-to-end (e2e) testing, run:
+## 📧 EmailJS Configuration
+
+Contact form uses EmailJS. To make it functional:
+
+1. Register at [EmailJS](https://www.emailjs.com/)
+2. Create email service and template
+3. In `/src/app/pages/contact/contact.ts` add:
+   - `serviceId` - your EmailJS service ID
+   - `templateId` - your email template ID
+   - `publicKey` - your EmailJS public key
+
+## 📁 Structure
+
+```
+src/app/
+├── pages/           # All pages (home, menu, gallery, catering, contact)
+└── shared/          # Header and footer
+public/assets/gallery/  # Photos
+```
+
+## 📸 Gallery
+
+Photos are stored in `public/assets/gallery/` (1.jpg to 9.jpg, main.jpg)
+
+## 🛠️ Technologies
+
+- **Angular 18+** - standalone components, SSR
+- **TypeScript** - strict mode
+- **SCSS** - styling
+- **EmailJS** - contact form
+- **Angular Router** - navigation
+
+## 📦 Build
 
 ```bash
-ng e2e
+# Production build
+npm run build
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Build artifacts will be in `dist/` folder
 
-## Additional Resources
+## 📝 Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- [Angular Documentation](https://angular.dev)
+- [EmailJS Documentation](https://www.emailjs.com/docs/)
+- [SCSS Documentation](https://sass-lang.com/documentation/)
+
+## 👨‍💻 Author
+
+Adrian Vlčko
+
+---
+
+**Version:** 1.0.0  
+**Angular CLI:** 21.0.2  
+**Node.js:** 25.2.1

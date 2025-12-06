@@ -1,0 +1,107 @@
+<div class="catering-page">
+  <div class="container">
+    <!-- Služby sekcia -->
+    <section class="services-section">
+      <h2>Čo vieme spraviť?</h2>
+      <p class="intro-text">V podstate všetko, čo potrebuješ na tvoju akciu. Stačí napísať a dohodneme sa!</p>
+      <div class="services-grid">
+        <div class="service-item">
+          <h3>Firemné akcie</h3>
+          <p>Meeting, teambuilding alebo firemná párty? Postaráme sa o to, aby ľudia mali dobrú náladu (a plné brucho).</p>
+        </div>
+        <div class="service-item">
+          <h3>Tvoja oslava</h3>
+          <p>Narodky, svadba alebo len tak párty? Prídeme s chutným jedlom a ty sa budeš môcť venovať hosťom!</p>
+        </div>
+        <div class="service-item">
+          <h3>Lunch do kanclu</h3>
+          <p>Už ti nebaví menza? Pravidelne ti dodáme čerstvé lunch boxy. Každý deň niečo iné, vždy chutné.</p>
+        </div>
+        <div class="service-item">
+          <h3>Sladké radosti</h3>
+          <p>Domáce koláčiky, dezerty a torty. Keď chceš niečo špeciálne, stačí sa opýtať!</p>
+        </div>
+        <div class="service-item">
+          <h3>Raňajky na mieru</h3>
+          <p>Ranný meeting? Začnite ho poriadne - s čerstvými croissantmi, sendvičmi a dobrou kávou.</p>
+        </div>
+        <div class="service-item">
+          <h3>Prenájom priestoru</h3>
+          <p>Potrebuješ miesto na akciu? Naša kaviareň je k dispozícii na prenájom. Útulná atmosféra, Wi-Fi, všetko čo treba.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prečo BreakTime catering -->
+    <section class="why-us-section">
+      <h2>Prečo práve my?</h2>
+      <div class="benefits-grid">
+        <div class="benefit">
+          <h4>Chutné jedlo</h4>
+          <p>Robíme to tak, ako to máme v kaviarni. S láskou a s poctivými surovinami.</p>
+        </div>
+        <div class="benefit">
+          <h4>Flexibilní sme</h4>
+          <p>Máš špeciálne požiadavky? Malý alebo veľký budget? Vieme sa dohodnúť!</p>
+        </div>
+        <div class="benefit">
+          <h4>Máme prax</h4>
+          <p>Robili sme už rôzne akcie - od malých birthdays po veľké firemky. Vieme, čo funguje.</p>
+        </div>
+        <div class="benefit">
+          <h4>Sme z BB</h4>
+          <p>Lokálni chalani a baby, poznáme prostredie a vieme rýchlo zareagovať.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galéria fotiek -->
+    <section class="catering-gallery">
+      <h2>Pozri, čo sme už stihli</h2>
+      <p class="gallery-description">Pár fotiek z akcií, kde sme boli. Viac nájdeš na našom Instagrame!</p>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item" *ngFor="let image of cateringImages">
+          <img [src]="image.src">
+          <div class="image-overlay">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt sekcia -->
+    <section class="catering-contact">
+      <h2>Tak čo, ideme do toho?</h2>
+      <div class="contact-content">
+        <div class="contact-text">
+          <p>Napíš nám, čo potrebuješ, a dáme ti vedieť, čo vieme spraviť. Bez zbytočných formalít!</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <h4>Telefón</h4>
+              <p>Zavolaj nám: <a href="tel:+421907602172">+421 907 602 172</a></p>
+            </div>
+            
+            <div class="contact-method">
+              <h4>Instagram</h4>
+              <p>Napíš nám: <a href="https://www.instagram.com/breaktimebb/" target="_blank">@breaktimebb</a></p>
+            </div>
+            
+            <div class="contact-method">
+              <h4>Príď sa pozrieť</h4>
+              <p>Zastav sa u nás v kaviarni na Banskej. Dáme si kávu a prejdeme všetko v pohode.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-cta">
+          <h3>Plánuješ akciu?</h3>
+          <p>Poviem ti, koľko to stojí a čo všetko vieme pripraviť. Easy!</p>
+          <a href="tel:+421907602172" class="cta-button">
+            Zavolaj nám
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

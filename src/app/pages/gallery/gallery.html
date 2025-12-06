@@ -1,0 +1,34 @@
+<div class="gallery-page">
+  <div class="container">
+    <h1>Naše prostredie</h1>
+    <p class="gallery-intro">Pozri sa, ako to u nás vyzerá! Atmosféra, kávička a jedlá, ktoré robíme s láskou</p>
+
+    <div class="gallery-grid">
+      <div 
+        class="gallery-item" 
+        *ngFor="let image of galleryImages; let i = index"
+        (click)="openModal(image)"
+      >
+        <img [src]="image.src">
+        <div class="overlay">
+        </div>
+      </div>
+    </div>
+
+    <!-- Placeholder obrázky info -->
+    <div class="placeholder-info">
+      <h3>Nové fotky už čoskoro!</h3>
+    </div>
+  </div>
+
+  <!-- Modal pre zobrazenie obrázkov -->
+  <div class="modal" *ngIf="selectedImage" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <button class="close-btn" (click)="closeModal()">&times;</button>
+      <button class="nav-btn prev-btn" (click)="prevImage()">&#8249;</button>
+      <img [src]="selectedImage.src" [alt]="selectedImage.alt">
+      <button class="nav-btn next-btn" (click)="nextImage()">&#8250;</button>
+      <div class="modal-caption">{{ selectedImage.caption }}</div>
+    </div>
+  </div>
+</div>

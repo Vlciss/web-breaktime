@@ -1,0 +1,213 @@
+.home-page {
+  .hero {
+    color: #fef9f3;
+    padding: 5rem 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: linear-gradient(rgba(62, 39, 35, 0.65), rgba(107, 68, 35, 0.6)), url('/assets/gallery/main.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(255,255,255,0.1), transparent);
+      border-radius: 50%;
+      z-index: 0;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      position: relative;
+      z-index: 1;
+    }
+
+    p {
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: white;
+      color: #3e2723;
+      padding: 1.2rem 2.5rem;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      position: relative;
+      z-index: 1;
+
+      &:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+      }
+    }
+  }
+
+  .about-section {
+    padding: 3rem 0;
+    background: #fef9f3;
+
+    h2 {
+      text-align: center;
+      color: #3e2723;
+      margin-bottom: 3rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .about-content {
+      display: grid;
+      gap: 3rem;
+      
+      .story, .team, .values, .social {
+        background: linear-gradient(135deg, #ffffff, #fffbf7);
+        padding: 2.5rem;
+        border-radius: 15px;
+        border: 3px solid #f4e4d7;
+        box-shadow: 0 5px 20px rgba(139, 90, 43, 0.1);
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 30px rgba(139, 90, 43, 0.15);
+          border-color: #e8c5a0;
+        }
+      }
+
+      h3 {
+        color: #d4a574;
+        margin-bottom: 1.5rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+      }
+
+      p {
+        line-height: 1.8;
+        color: #5d4037;
+        margin-bottom: 1rem;
+        font-size: 1.05rem;
+        
+        a {
+          color: #d4a574;
+          text-decoration: none;
+          font-weight: 600;
+          
+          &:hover {
+            text-decoration: underline;
+            
+          }
+        }
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        
+        li {
+          padding: 0.8rem 0;
+          border-bottom: 2px solid #f4e4d7;
+          line-height: 1.6;
+          color: #5d4037;
+          
+          &:last-child {
+            border-bottom: none;
+          }
+          
+          strong {
+            color: #d4a574;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      .about-content {
+        grid-template-columns: 2fr 1fr;
+        
+        .story {
+          grid-column: 1 / -1;
+        }
+      }
+    }
+  }
+
+  .features {
+    padding: 3rem 0;
+    background: #fef9f3;
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #3e2723;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature {
+      background: linear-gradient(135deg, #ffffff, #fffbf7);
+      padding: 2.5rem;
+      border-radius: 15px;
+      border: 3px solid #f4e4d7;
+      box-shadow: 0 5px 20px rgba(139, 90, 43, 0.1);
+      text-align: center;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 30px rgba(139, 90, 43, 0.15);
+        border-color: #e8c5a0;
+      }
+
+      h3 {
+        color: #d4a574;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+
+      p {
+        line-height: 1.7;
+        color: #5d4037;
+        font-size: 1.05rem;
+      }
+    }
+  }
+}

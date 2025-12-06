@@ -1,0 +1,94 @@
+<div class="contact-page">
+  <div class="container">
+    <h1>Príď sa pozrieť!</h1>
+    
+    <div class="contact-content">
+      <div class="contact-info">
+        <h2>Kde nás nájdeš?</h2>
+        
+        <div class="info-section">
+          <h3>Adresa</h3>
+          <p>Trieda SNP 75, Banská Bystrica<br>
+          (budova štatistického úradu)</p>
+        </div>
+        
+        <div class="info-section">
+          <h3>Otváracie hodiny</h3>
+          <p>PON - PIA: 8:00 - 18:00</p>
+        </div>
+        
+        <div class="info-section">
+          <h3>Kontakt</h3>
+          <p>
+            <a href="tel:+421907602172">+421 907 602 172</a><br>
+            <a href="https://www.instagram.com/breaktimebb/" target="_blank">@breaktimebb</a>
+          </p>
+        </div>
+        
+        <div class="info-section">
+          <h3>Objednaj si</h3>
+          <p>
+            <a href="https://food.bolt.eu/" target="_blank">@boltfood_sk</a><br>
+            <a href="https://wolt.com/sk/svk" target="_blank">@wolt.slovensko</a>
+          </p>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <h2>Alebo nám napíš tu</h2>
+        <p class="form-intro">Máš otázku? Chceš sa opýtať na niečo? Vyplň form a ozvéme sa ti!</p>
+        
+        <div *ngIf="submitSuccess" class="success-message">
+          Super! Správa bola odoslaná. Ozvéme sa ti čoskoro!
+        </div>
+        
+        <div *ngIf="submitError" class="error-message">
+          Ups! Niečo sa pokazilo. Skús to znova alebo nás kontaktuj cez Instagram.
+        </div>
+        
+        <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+          <div class="form-group">
+            <label for="name">Tvoje meno</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              [(ngModel)]="formData.name"
+              placeholder="Ako sa voláš?" 
+              required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Tvôj email</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              [(ngModel)]="formData.email"
+              placeholder="meno@email.sk" 
+              required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">O čo ide?</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              [(ngModel)]="formData.message"
+              rows="5" 
+              placeholder="Napíš nám, čo potrebuješ..." 
+              required></textarea>
+          </div>
+          
+          <button 
+            type="submit" 
+            class="submit-btn" 
+            [disabled]="isSubmitting || !contactForm.form.valid">
+            <span *ngIf="!isSubmitting">Odoslať správu</span>
+            <span *ngIf="isSubmitting">Posielam...</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
