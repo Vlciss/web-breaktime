@@ -1,0 +1,9 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://vlciss.github.io/breaktime-web/sitemap.xml
+
+# Disallow admin or private areas (if any in future)
+# Disallow: /admin/
