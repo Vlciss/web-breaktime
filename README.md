@@ -1,55 +1,84 @@
-# BreakTime - Café Website
+# BreakTime - Breakfast Place in Banská Bystrica
 
-Modern website for BreakTime café in Banská Bystrica. Built with Angular 18+.
+Modern website for BreakTime breakfast place in Banská Bystrica. Built with Angular 18+.
+
+🌐 **Live Website:** [https://vlciss.github.io/breaktime-web/](https://vlciss.github.io/breaktime-web/)
 
 ## 📋 About
 
-BreakTime is a café in the center of Banská Bystrica offering quality coffee, fresh food and a pleasant atmosphere. This website serves as an online business card with information about the menu, gallery and contact form.
+BreakTime is a breakfast place in Banská Bystrica offering quality coffee, fresh food and a pleasant atmosphere. This website serves as an online business card with information about menu, gallery, catering and contact form.
 
-## 🎨 Features
+**Address:** Trieda SNP 75, Banská Bystrica (Statistical Office building)  
+**Opening Hours:** MON-FRI 8:00-18:00  
+**Contact:** +421 907 602 172  
+**Instagram:** [@breaktimebb](https://www.instagram.com/breaktimebb/)
 
-- **Home page** - hero section with background image, café story and values
-- **Menu** - split into drinks and food menu (without prices)
-- **Gallery** - 9 photo slots with elegant display
-- **Catering** - catering services with gallery and contact
+## ✨ Features
+
+- **Home page** - hero section with background, café story, our approach, mini gallery preview
+- **Menu** - split into drinks and food sections (without prices)
+- **Gallery** - 9 photos with elegant display and modal preview
+- **Catering** - catering services, venue rental
 - **Contact form** - functional form connected to EmailJS
-- **Responsive design** - optimized for mobile, tablet and desktop
+- **Responsive design** - fully optimized for mobile, tablet and desktop
+- **SEO optimization** - meta tags, Schema.org, sitemap.xml, robots.txt
 
 ## 🎨 Design
 
 ### Color Palette
 - Primary colors: `#6B4423`, `#8B5A2B` (dark brown gradients)
-- Background: `#fef9f3` (cream)
+- Background: `#fef9f3` (cream) with subtle texture
 - Accents: `#d4a574`, `#e8c5a0`, `#f4e4d7`
 - Text: `#5d4037`
 
 ### Style
-- Casual Slovak language
+- Casual Slovak language content
 - Warm brown-beige tones reminiscent of coffee and food
-- Subtle shadows and hover effects
-- Minimalist approach
+- Subtle background texture (opacity 0.12, blur 1px)
+- Underlined menu links in header
+- 3-column footer (opening hours | address | contact)
+- Minimalist approach focused on content
 
-## 🚀 Getting Started
+## 🚀 Installation and Setup
 
 ### Prerequisites
 - Node.js v25.2.1 or higher
 - npm or yarn
 
-### Installation
+### Local Development
 
 ```bash
 # Clone repository
-git clone <repository-url>
-cd break-time-web
+git clone https://github.com/Vlciss/breaktime-web.git
+cd breaktime-web
 
 # Install dependencies
 npm install
 
-# Start development server
+# Start dev server
 npm start
 ```
 
 Application will be available at `http://localhost:4200/`
+
+## 🌐 GitHub Pages Deployment
+
+Project is automatically published to GitHub Pages on every push to `main` branch.
+
+### Automatic Deployment
+1. Push to `main` branch triggers GitHub Actions workflow
+2. Project is built using `npm run build`
+3. Build is automatically deployed to GitHub Pages
+4. Website is available at: [https://vlciss.github.io/breaktime-web/](https://vlciss.github.io/breaktime-web/)
+
+### Manual Deployment
+```bash
+# Production build
+npm run build
+
+# Deploy to GitHub Pages (automatically via GitHub Actions)
+git push origin main
+```
 
 ## 📧 EmailJS Configuration
 
@@ -62,45 +91,105 @@ Contact form uses EmailJS. To make it functional:
    - `templateId` - your email template ID
    - `publicKey` - your EmailJS public key
 
-## 📁 Structure
+## 📁 Project Structure
 
 ```
-src/app/
-├── pages/           # All pages (home, menu, gallery, catering, contact)
-└── shared/          # Header and footer
-public/assets/gallery/  # Photos
+src/
+├── app/
+│   ├── pages/              # All pages
+│   │   ├── home/           # Home page
+│   │   ├── menu/           # Menu page
+│   │   ├── gallery/        # Gallery
+│   │   ├── catering/       # Catering
+│   │   └── contact/        # Contact
+│   ├── shared/             # Shared components
+│   │   ├── header/         # Header
+│   │   └── footer/         # Footer
+│   ├── app.scss            # Global styles (background texture)
+│   └── schema.service.ts   # Schema.org SEO
+├── styles.scss             # Global CSS
+└── index.html              # HTML + SEO meta tags
+
+public/
+└── assets/
+    └── gallery/            # Photos (1.jpg - 9.jpg, main.jpg, textura.png)
 ```
 
 ## 📸 Gallery
 
-Photos are stored in `public/assets/gallery/` (1.jpg to 9.jpg, main.jpg)
+Photos are stored in `public/assets/gallery/`:
+- `1.jpg` to `9.jpg` - gallery photos
+- `main.jpg` - hero background on home page
+- `textura.png` - background texture for pages
 
 ## 🛠️ Technologies
 
-- **Angular 18+** - standalone components, SSR
+- **Angular 18+** - standalone components, routing
 - **TypeScript** - strict mode
-- **SCSS** - styling
+- **SCSS** - styling with texture
 - **EmailJS** - contact form
-- **Angular Router** - navigation
+- **Schema.org** - SEO structured data (LocalBusiness, CafeOrCoffeeShop)
+- **GitHub Pages** - automatic deployment
+- **GitHub Actions** - CI/CD pipeline
 
-## 📦 Build
+## 🎯 SEO Optimization
+
+- ✅ Meta tags (title, description, keywords)
+- ✅ Open Graph tags (Facebook, LinkedIn)
+- ✅ Twitter Card tags
+- ✅ Schema.org structured data (LocalBusiness)
+- ✅ `sitemap.xml` - sitemap
+- ✅ `robots.txt` - crawler directives
+- ✅ Canonical URLs
+- ✅ Slovak language (`lang="sk"`)
+
+## 📱 Mobile Optimization
+
+- ✅ Responsive design for all devices
+- ✅ Touch-friendly elements (min-height 44px)
+- ✅ Optimized fonts and spacing
+- ✅ Viewport meta tag properly configured
+- ✅ Flexible navigation menu (flex-wrap)
+
+## 🎨 Recent Changes (December 2025)
+
+- Added subtle background texture (opacity 0.12, blur 1px)
+- Texture only in main content area (not header/footer)
+- Changed menu links to underline style (instead of box)
+- 3-column footer layout (opening hours | address | contact)
+- Added Google Maps link to footer
+- Mini gallery preview on home page (sidebar)
+- Gallery with links to 9 photos
+- Contact cards with photos (prepared structure)
+- Complete mobile optimization for all pages
+
+## 📦 Build Commands
 
 ```bash
+# Development server
+npm start
+
 # Production build
 npm run build
-```
 
-Build artifacts will be in `dist/` folder
+# Run tests
+npm test
+
+# Lint check
+npm run lint
+```
 
 ## 📝 Resources
 
 - [Angular Documentation](https://angular.dev)
 - [EmailJS Documentation](https://www.emailjs.com/docs/)
-- [SCSS Documentation](https://sass-lang.com/documentation/)
+- [Schema.org](https://schema.org/)
+- [GitHub Pages](https://pages.github.com/)
 
-## 👨‍💻 Author
+---
 
-Adrian Vlčko
+**Author:** Adrian Vlčko  
+**License:** Private project for BreakTime Banská Bystrica
 
 ---
 

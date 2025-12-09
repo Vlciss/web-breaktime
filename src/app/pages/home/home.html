@@ -17,7 +17,7 @@
     </div>
   </section>
 
-  <section class="about-section">
+  <section class="content-section">
     <div class="container">
       
       <div class="about-content">
@@ -34,25 +34,19 @@
           <p>Za BreakTime stojí tím nadšencov, ktorí milujú dobrú kávu a kuchyňu. Každý člen nášho tímu prispieva k jedinečnému zážitku, ktorý u nás zažijete. Snažíme sa vytvárať nie len kaviareň, ale komunitu ľudí, ktorí oceňujú kvalitu a autentickosť.</p>
           
           <p>Našich baristov neustále vzdelávame v príprave kávy a sledujeme najnovšie trendy v gastronómii, aby sme vám mohli ponúknuť to najlepšie.</p>
-          <ul>
-            <li></li>
-            <li></li>
-          </ul>
 
           <h3>Buď v obraze!</h3>
           <p>Chceš vedieť, čo je nové? sledujte nás na Instagrame <a href="https://www.instagram.com/breaktimebb/" target="_blank">@breaktimebb</a>, kde pravidelne zdieľame fotky našich najnovších jedál, káv a atmosféry z kaviarni.</p>
-
         </div>
         
-        <div class="values">
-          <h3>Na čom nám záleží?</h3>
-          <ul>
-            <li><strong>Kvalita bez kompromisov:</strong> Len tie najlepšie suroviny a káva od top dodávateľov. Žiadne lacné náhrady!</li>
-            <li><strong>Komunita BB:</strong> Sme časť Banskej Bystrice a podporujeme lokálnych farmárov a dodávateľov</li>
-            <li><strong>Zelená myseľ:</strong> Staráme sa o planétu - recyklujeme, šetríme a podporujeme udržateľnosť</li>
-            <li><strong>Dobrá atmosféra:</strong> Každý je u nás vítaný! Chceme, aby si sa cítil ako doma</li>
-            <li><strong>Vždy fresh:</strong> Neustále skúšame nové veci a zlepšujeme sa</li>
-          </ul>
+        <div class="gallery-preview-side">
+          <h3>Náš svet v obrázkoch</h3>
+          <div class="preview-mini-grid">
+            <div class="preview-mini-item" *ngFor="let i of [1,2,3,4,5,6]">
+              <img [src]="'assets/gallery/' + i + '.jpg'" [alt]="'BreakTime fotka ' + i" loading="lazy">
+            </div>
+          </div>
+          <a routerLink="/gallery" class="view-more">Pozri celú galériu →</a>
         </div>
       </div>
     </div>

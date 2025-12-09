@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterLink, CommonModule],
+  imports: [RouterLink, CommonModule, NgFor],
   templateUrl: './home.html',
   styleUrl: './home.scss'
 })

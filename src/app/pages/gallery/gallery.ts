@@ -11,31 +11,49 @@ export class Gallery {
   // Fotky z BreakTime Banská Bystrica
   galleryImages = [
     {
-      src: 'assets/gallery/1200x900.jpg'
+      src: 'assets/gallery/1.jpg',
+      alt: 'BreakTime Banská Bystrica - fotka 1',
+      caption: 'BreakTime Banská Bystrica'
     },
     {
-      src: 'assets/gallery/1200x900.jpg'
+      src: 'assets/gallery/2.jpg',
+      alt: 'BreakTime Banská Bystrica - fotka 2',
+      caption: 'BreakTime Banská Bystrica'
     },
     {
-      src: 'assets/gallery/1200x900.jpg'
+      src: 'assets/gallery/3.jpg',
+      alt: 'BreakTime Banská Bystrica - fotka 3',
+      caption: 'BreakTime Banská Bystrica'
     },
     {
-      src: 'assets/gallery/1200x900.jpg'
+      src: 'assets/gallery/4.jpg',
+      alt: 'BreakTime Banská Bystrica - fotka 4',
+      caption: 'BreakTime Banská Bystrica'
     },
     {
-      src: 'assets/gallery/1200x900.jpg'
+      src: 'assets/gallery/5.jpg',
+      alt: 'BreakTime Banská Bystrica - fotka 5',
+      caption: 'BreakTime Banská Bystrica'
     },
     {
-      src: 'assets/gallery/1200x900.jpg'
+      src: 'assets/gallery/6.jpg',
+      alt: 'BreakTime Banská Bystrica - fotka 6',
+      caption: 'BreakTime Banská Bystrica'
     },
     {
-      src: 'assets/gallery/1200x900.jpg'
+      src: 'assets/gallery/7.jpg',
+      alt: 'BreakTime Banská Bystrica - fotka 7',
+      caption: 'BreakTime Banská Bystrica'
     },
     {
-      src: 'assets/gallery/1200x900.jpg'
+      src: 'assets/gallery/8.jpg',
+      alt: 'BreakTime Banská Bystrica - fotka 8',
+      caption: 'BreakTime Banská Bystrica'
     },
     {
-      src: 'assets/gallery/1200x900.jpg'
+      src: 'assets/gallery/9.jpg',
+      alt: 'BreakTime Banská Bystrica - fotka 9',
+      caption: 'BreakTime Banská Bystrica'
     }
   ];
 
