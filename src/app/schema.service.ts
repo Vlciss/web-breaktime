@@ -19,7 +19,7 @@ export class SchemaService {
     const schema = {
       "@context": "https://schema.org",
       "@type": "CafeOrCoffeeShop",
-      "name": "BreakTime",
+      "name": "BREAKTIME",
       "image": "https://vlciss.github.io/breaktime-web/assets/gallery/main.jpg",
       "description": "Raňajkáreň v Banskej Bystrici. Ponúkame kvalitnú kávu, čerstvé jedlá a príjemnú atmosféru.",
       "address": {
