@@ -2,7 +2,7 @@
 
 Modern website for BreakTime breakfast place in Banská Bystrica. Built with Angular 18+.
 
-🌐 **Live Website:** [https://vlciss.github.io/breaktime-web/](https://vlciss.github.io/breaktime-web/)
+🌐 **Live Website:** [https://breaktime.sk/](https://breaktime.sk/)
 
 ## 📋 About
 
@@ -69,7 +69,7 @@ Project is automatically published to GitHub Pages on every push to `main` branc
 1. Push to `main` branch triggers GitHub Actions workflow
 2. Project is built using `npm run build`
 3. Build is automatically deployed to GitHub Pages
-4. Website is available at: [https://vlciss.github.io/breaktime-web/](https://vlciss.github.io/breaktime-web/)
+4. Website is available at: [https://breaktime.sk/](https://breaktime.sk/)
 
 ### Manual Deployment
 ```bash

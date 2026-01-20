@@ -20,7 +20,7 @@ export class SchemaService {
       "@context": "https://schema.org",
       "@type": "CafeOrCoffeeShop",
       "name": "BREAKTIME",
-      "image": "https://vlciss.github.io/breaktime-web/assets/gallery/main.jpg",
+      "image": "https://breaktime.sk/assets/gallery/main.jpg",
       "description": "Raňajkáreň v Banskej Bystrici. Ponúkame kvalitnú kávu, čerstvé jedlá a príjemnú atmosféru.",
       "address": {
         "@type": "PostalAddress",
@@ -34,7 +34,7 @@ export class SchemaService {
         "latitude": "48.7366",
         "longitude": "19.1528"
       },
-      "url": "https://vlciss.github.io/breaktime-web",
+      "url": "https://breaktime.sk",
       "telephone": "+421907602172",
       "priceRange": "$$",
       "openingHoursSpecification": [
@@ -46,7 +46,7 @@ export class SchemaService {
         }
       ],
       "servesCuisine": "Káva, Raňajky, Lunch, Dezerty",
-      "menu": "https://vlciss.github.io/breaktime-web/menu",
+      "menu": "https://breaktime.sk/menu",
       "sameAs": [
         "https://www.instagram.com/breaktimebb/"
       ]
@@ -68,7 +68,7 @@ export class SchemaService {
       "@type": "Restaurant",
       "name": "BreakTime Catering",
       "description": "Cateringové služby v Banskej Bystrici. Firemné akcie, oslavy, lunch boxy, raňajky na mieru.",
-      "image": "https://vlciss.github.io/breaktime-web/assets/gallery/main.jpg",
+      "image": "https://breaktime.sk/assets/gallery/main.jpg",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Trieda SNP 75",
@@ -77,7 +77,7 @@ export class SchemaService {
         "addressCountry": "SK"
       },
       "telephone": "+421907602172",
-      "url": "https://vlciss.github.io/breaktime-web/catering",
+      "url": "https://breaktime.sk/catering",
       "servesCuisine": "Catering, Firemné akcie, Oslavy"
     };
 
