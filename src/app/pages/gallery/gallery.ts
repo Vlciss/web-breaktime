@@ -11,47 +11,47 @@ export class Gallery {
   // Fotky z BREAKTIME Banská Bystrica
   galleryImages = [
     {
-      src: 'assets/gallery/a.jpg',
+      src: '/assets/gallery/a.jpg',
       alt: 'BREAKTIME Banská Bystrica - fotka 1',
       caption: 'BREAKTIME Banská Bystrica'
     },
     {
-      src: 'assets/gallery/b.jpg',
+      src: '/assets/gallery/b.jpg',
       alt: 'BREAKTIME Banská Bystrica - fotka 2',
       caption: 'BREAKTIME Banská Bystrica'
     },
     {
-      src: 'assets/gallery/c.jpg',
+      src: '/assets/gallery/c.jpg',
       alt: 'BREAKTIME Banská Bystrica - fotka 3',
       caption: 'BREAKTIME Banská Bystrica'
     },
     {
-      src: 'assets/gallery/d.jpg',
+      src: '/assets/gallery/d.jpg',
       alt: 'BREAKTIME Banská Bystrica - fotka 4',
       caption: 'BREAKTIME Banská Bystrica'
     },
     {
-      src: 'assets/gallery/e.jpg',
+      src: '/assets/gallery/e.jpg',
       alt: 'BREAKTIME Banská Bystrica - fotka 5',
       caption: 'BREAKTIME Banská Bystrica'
     },
     {
-      src: 'assets/gallery/f.jpg',
+      src: '/assets/gallery/f.jpg',
       alt: 'BREAKTIME Banská Bystrica - fotka 6',
       caption: 'BREAKTIME Banská Bystrica'
     },
     {
-      src: 'assets/gallery/g.jpg',
+      src: '/assets/gallery/g.jpg',
       alt: 'BREAKTIME Banská Bystrica - fotka 7',
       caption: 'BREAKTIME Banská Bystrica'
     },
     {
-      src: 'assets/gallery/h.jpg',
+      src: '/assets/gallery/h.jpg',
       alt: 'BREAKTIME Banská Bystrica - fotka 8',
       caption: 'BREAKTIME Banská Bystrica'
     },
     {
-      src: 'assets/gallery/i.jpg',
+      src: '/assets/gallery/i.jpg',
       alt: 'BREAKTIME Banská Bystrica - fotka 9',
       caption: 'BREAKTIME Banská Bystrica'
     }

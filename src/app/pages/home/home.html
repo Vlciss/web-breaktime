@@ -3,7 +3,7 @@
   class="hero"
   [ngStyle]="{
     'background-image':
-      'linear-gradient(rgba(62, 39, 35, 0.65), rgba(107, 68, 35, 0.6)), url(assets/main.jpg)',
+      'linear-gradient(rgba(62, 39, 35, 0.65), rgba(107, 68, 35, 0.6)), url(/assets/main.jpg)',
     'background-size': 'cover',
     'background-position': 'center',
     'background-repeat': 'no-repeat'
@@ -43,7 +43,7 @@
           <h3>Náš svet v obrázkoch</h3>
           <div class="preview-mini-grid">
             <div class="preview-mini-item" *ngFor="let i of [1,2,3,4,5,6]">
-              <img [src]="'assets/gallery/' + i + '.jpg'" [alt]="'BreakTime fotka ' + i" loading="lazy">
+              <img [src]="'/assets/gallery/' + i + '.jpg'" [alt]="'BreakTime fotka ' + i" loading="lazy">
             </div>
           </div>
           <a routerLink="/gallery" class="view-more">Pozri celú galériu →</a>
