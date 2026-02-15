@@ -62,7 +62,11 @@
       
       <div class="gallery-grid">
         <div class="gallery-item" *ngFor="let image of cateringImages">
-          <img [src]="image.src">
+          <img 
+            [src]="image.src"
+            loading="lazy"
+            decoding="async"
+          >
           <div class="image-overlay">
           </div>
         </div>

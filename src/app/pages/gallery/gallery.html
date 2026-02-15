@@ -9,7 +9,11 @@
         *ngFor="let image of galleryImages; let i = index"
         (click)="openModal(image)"
       >
-        <img [src]="image.src">
+        <img 
+          [src]="image.src"
+          loading="lazy"
+          decoding="async"
+        >
         <div class="overlay">
         </div>
       </div>

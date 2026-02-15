@@ -22,6 +22,30 @@ BreakTime is a breakfast place in Banská Bystrica offering quality coffee, fres
 - **Contact form** - functional form connected to EmailJS
 - **Responsive design** - fully optimized for mobile, tablet and desktop
 - **SEO optimization** - meta tags, Schema.org, sitemap.xml, robots.txt
+- **⚡ Performance optimizations** - lazy loading, WebP support, optimized builds
+
+## ⚡ Performance Optimizations
+
+This project includes several performance enhancements:
+
+- ✅ **Lazy loading** for all gallery and catering images
+- ✅ **Async image decoding** for smoother rendering
+- ✅ **Optimized Angular builds** with minification and tree-shaking
+- ✅ **DNS prefetch** for faster external resource loading
+- ✅ **SSR (Server-Side Rendering)** for faster initial page load
+
+For detailed optimization guide, see [OPTIMIZATION.md](OPTIMIZATION.md).
+
+### Image Optimization
+
+To compress images and create WebP versions:
+
+```bash
+chmod +x optimize-images.sh
+./optimize-images.sh
+```
+
+This will reduce image sizes by ~50-70% without visible quality loss.
 
 ## 🎨 Design
 
