@@ -7,11 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="BreakTime je raňajkáreň v Banskej Bystrici. Ponúkame kvalitnú kávu, čerstvé jedlá a príjemnú atmosféru. Catering, prenájom priestoru. Trieda SNP 75, BB.">
-  <meta name="keywords" content="raňajkáreň Banská Bystrica, káva BB, BreakTime, čerstvé jedlo, raňajky, lunch, catering Banská Bystrica, prenájom priestoru BB">
+  <meta name="description" content="BREAKTIME - kaviareň v Banskej Bystrici ☕ Kvalitná káva, čerstvé raňajky a lunch. Trieda SNP 75. Otvorené Po-Pi 8:00-18:00. ☎️ +421 907 602 172">
+  <meta name="keywords" content="kaviareň banská bystrica, raňajkáreň bb, káva banská bystrica, raňajky bb, lunch banská bystrica, catering bb, breaktime bb">
   <meta name="robots" content="index, follow">
   <meta name="language" content="Slovak">
-  <meta name="revisit-after" content="7 days">
+  <meta name="geo.region" content="SK-BC">
+  <meta name="geo.placename" content="Banská Bystrica">
+  <meta name="geo.position" content="48.7339;19.1534">
+  <meta name="ICBM" content="48.7339, 19.1534">
+  
+  <!-- Google Search Console Verification -->
+  <!-- Nahraď 'your-verification-code' skutočným kódom z search.google.com/search-console -->
+  <meta name="google-site-verification" content="your-verification-code">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -40,5 +47,51 @@
 </head>
 <body>
   <app-root></app-root>
+  
+  <!-- Structured Data for Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Cafe",
+    "name": "BREAKTIME",
+    "image": "https://breaktime.sk/assets/gallery/main.jpg",
+    "@id": "https://breaktime.sk",
+    "url": "https://breaktime.sk",
+    "telephone": "+421907602172",
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Trieda SNP 75",
+      "addressLocality": "Banská Bystrica",
+      "postalCode": "974 01",
+      "addressCountry": "SK"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 48.7339,
+      "longitude": 19.1534
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/breaktimebb/"
+    ],
+    "servesCuisine": "Slovak, Breakfast, Coffee",
+    "menu": "https://breaktime.sk/menu",
+    "acceptsReservations": "False"
+  }
+  </script>
 </body>
 </html>
